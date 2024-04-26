@@ -1,0 +1,28 @@
+// תוכני שבודקת במחוזרת אםם יש מספר 
+
+public class CheckDigits_3 {
+    public static void main(String[] args) {
+        // Define the string to be checked
+        String str = "Hello World!";
+
+        // Flag to indicate whether digits are found or not
+        boolean foundDigit = false;
+
+        // Loop through each character in the string
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            // Check if the current character is a digit
+            if (Character.isDigit(ch)) {
+                foundDigit = true;
+                break; // Exit the loop as soon as a digit is found
+            }
+        }
+
+        // Print the result based on whether digits are found or not
+        if (foundDigit) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+        }
+    }
+}
